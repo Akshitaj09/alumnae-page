@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+body {
+  font-family: "Playfair Display", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8eef5;
+  color: rgb(37, 33, 145);
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h1 {
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid rgb(91, 93, 203);
+  width: 250px;
+  outline: none;
+}
+
+.search-bar input:focus {
+    border: 1px solid rgb(91, 93, 203);
+}
+
+.search-bar .filter-btn {
+  background-color: white;
+  color: rgb(91, 93, 203);
+  padding: 5px 10px;
+  border: 1px solid rgb(91, 93, 203);
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-bar i {
+  color: rgb(91, 93, 203);
+}
+
+.filter-popup {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-popup select {
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  font-size: 14px;
+  width: 150px;
+}
+
+.alumnae-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.alumna {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 250px;
+}
+
+.alumna .picture {
+  background-color: rgb(0, 4, 65);
+  border-radius: 1px;
+  width: 250px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alumna img {
+  width: 140px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.info h2 {
+  font-size: 18px;
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.info p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.info a {
+  color: rgb(91, 93, 203);
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+/* @media screen and (min-width: 768px) {
+  nav {
+    width: 100%;
+  }
+  .search-bar {
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -70px;
+  }
+
+  .search-bar input {
+    width: 50%;
+    
+  }
+
+  .search-bar i .fa-filter {
+    width: 10%;
+    
+  }
+
+  .alumnae-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;
+    justify-content: center;
+    margin-left: 40px;
+    width: 600px;
+  }
+
+  .alumna {
+    width: 100%;
+    
+    max-width: 100%;
+  }
+
+  .alumna .picture {
+    width: 100%;
+    
+    height: 200px;
+    
+  }
+
+  .alumna img {
+    width: 200px;
+    
+    height: 200px;
+  }
+
+  .info h2 {
+    font-size: 25px;
+  }
+
+  .info p {
+    font-size: 18px;
+  }
+} */
+
+/* Additional responsiveness for very small screens */
+/* @media screen and (min-width: 480px) {
+    nav {
+        width: 100%;
+    }
+
+  .search-bar {
+    width: 50%;
+    margin-top: 10px;
+    margin-right: -70px;
+  }
+
+  .search-bar input {
+    font-size: 12px;
+    width: 41px;
+  }
+
+  .search-bar .filter-btn {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .info h2 {
+    font-size: 14px;
+  }
+
+  .info p {
+    font-size: 10px;
+  }
+
+  .info a {
+    font-size: 12px;
+  }
+} */
